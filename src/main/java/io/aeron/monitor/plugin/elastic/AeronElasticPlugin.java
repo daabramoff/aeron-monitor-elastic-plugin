@@ -21,6 +21,16 @@ public class AeronElasticPlugin implements Plugin {
     private Map<String, DriverAccess> driverAccessMap;
 
     @Override
+    public String getName() {
+        return "Aeron-Monitor Elastic Plug-In";
+    }
+
+    @Override
+    public String getVersion() {
+        return "0.0.1";
+    }
+
+    @Override
     public void init(String[] strings, Map<String, DriverAccess> map) {
         try {
             ctx = new AnnotationConfigApplicationContext(
