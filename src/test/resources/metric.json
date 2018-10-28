@@ -1,0 +1,17 @@
+{
+  "metric": {
+    "properties": {
+      "a": {
+        "type": "text",
+        "index": "false"
+      },
+      "b": {
+        "type": "text",
+        "index": "true"
+      },
+      "c": {
+        "type": "text"
+      }
+    }
+  }
+}

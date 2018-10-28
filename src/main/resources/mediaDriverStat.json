@@ -1,0 +1,91 @@
+{
+  "properties": {
+    "timeStamp": {
+      "type": "date"
+    },
+    "name": {
+      "type": "text"
+    },
+    "cncVersion": {
+      "type": "integer"
+    },
+    "consumerHeartbeatTime": {
+      "type": "date"
+    },
+    "startTimeStamp": {
+      "type": "date"
+    },
+    "bytesSent": {
+      "type": "long"
+    },
+    "bytesReceived": {
+      "type": "long"
+    },
+    "receiverProxyFails": {
+      "type": "long"
+    },
+    "senderProxyFails": {
+      "type": "long"
+    },
+    "conductorProxyFails": {
+      "type": "long"
+    },
+    "nakMessagesSent": {
+      "type": "long"
+    },
+    "nakMessagesReceived": {
+      "type": "long"
+    },
+    "statusMessagesSent": {
+      "type": "long"
+    },
+    "statusMessagesReceived": {
+      "type": "long"
+    },
+    "heartbeatsSent": {
+      "type": "long"
+    },
+    "heartbeatsReceived": {
+      "type": "long"
+    },
+    "retransmitsSent": {
+      "type": "long"
+    },
+    "flowControlUnderRuns": {
+      "type": "long"
+    },
+    "flowControlOverRuns": {
+      "type": "long"
+    },
+    "invalidPackets": {
+      "type": "long"
+    },
+    "errors": {
+      "type": "long"
+    },
+    "shortSends": {
+      "type": "long"
+    },
+    "freeFails": {
+      "type": "long"
+    },
+    "senderFlowControlLimits": {
+      "type": "long"
+    },
+    "unblockedPublications": {
+      "type": "long"
+    },
+    "unblockedCommands": {
+      "type": "long"
+    },
+    "possibleTtlAsymmetry": {
+      "type": "long"
+    },
+    "controllableIdleStrategy": {
+      "type": "long"
+    },
+    "lossGapFills": {
+      "type": "long"
+    }
+  }
+}
