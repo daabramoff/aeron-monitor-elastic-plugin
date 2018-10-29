@@ -23,7 +23,6 @@ import java.security.KeyStore;
 
 @Configuration
 public class SpringApp {
-
     @Autowired
     private PluginConfig config;
 

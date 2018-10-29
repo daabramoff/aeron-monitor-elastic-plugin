@@ -23,7 +23,6 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ElasticSender {
-
     public static final String MEDIA_DRIVER_STAT = "mediaDriverStat";
 
     private RestHighLevelClient highLevelClient;

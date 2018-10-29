@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class IndexRotationStrategyFactory {
-
     @Autowired
     private PluginConfig config;
 
@@ -28,7 +27,7 @@ public class IndexRotationStrategyFactory {
             throw new RuntimeException();
         }
 
-        indexNameStrategy.setIndex(config.getElasticIndexName());
+        indexNameStrategy.setIndex(config.getDataIndexName());
         return indexNameStrategy;
     }
 }

@@ -15,16 +15,15 @@ public class PluginConfig {
     @Value("${elastic.keystore.path}") private String elasticKeyStorePath;
     @Value("${elastic.keystore.password}") private String elasticKeyStorePassword;
 
-    @Value("${data.index_name}") private String elasticIndexName;
+    @Value("${data.index_name}") private String dataIndexName;
     @Value("${data.index_rotation}") private String indexRotation;
-    @Value("${data.create_index_if_not_exist}") private String createIndexIfNotExists;
+    @Value("${data.create_index_if_not_exists}") private String createIndexIfNotExists;
 
     @Value("${data.send_interval_value}") private long sendIntervalValue;
     @Value("${data.send_interval_unit}") private String sendIntervalUnit;
-
+    @Value("${data.index_name}") private String indexName;
 
     @Value("${data.driver_metrics.enabled}") private boolean dataDriverMetrics;
-    @Value("${data.driver_metrics.index}") private String dataDriverMetricsIndex;
 
     public String getElasticHost() {
         return elasticHost;
@@ -89,12 +88,12 @@ public class PluginConfig {
         return this;
     }
 
-    public String getElasticIndexName() {
-        return elasticIndexName;
+    public String getDataIndexName() {
+        return dataIndexName;
     }
 
-    public PluginConfig setElasticIndexName(String elasticIndexName) {
-        this.elasticIndexName = elasticIndexName;
+    public PluginConfig setDataIndexName(String dataIndexName) {
+        this.dataIndexName = dataIndexName;
         return this;
     }
 
@@ -143,12 +142,12 @@ public class PluginConfig {
         return this;
     }
 
-    public String getDataDriverMetricsIndex() {
-        return dataDriverMetricsIndex;
+    public String getIndexName() {
+        return indexName;
     }
 
-    public PluginConfig setDataDriverMetricsIndex(String dataDriverMetricsIndex) {
-        this.dataDriverMetricsIndex = dataDriverMetricsIndex;
+    public PluginConfig setIndexName(String indexName) {
+        this.indexName = indexName;
         return this;
     }
 }
